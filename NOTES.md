@@ -1,3 +1,11 @@
+In order to edit specific things and not having to update everything
+
+def controllername_params
+params.filter do |key, value|
+[:attribute, attribute, attribute].include?(key)
+end
+end
+
 # Phase 3 Project Guidelines
 
 ## Learning Goals
