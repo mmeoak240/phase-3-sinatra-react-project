@@ -12,4 +12,8 @@ end
 use Rack::JSONBodyParser
 
 # Our application
+use JobsController
+use ApplicationsController
+use ApplicantsController
 run ApplicationController
+

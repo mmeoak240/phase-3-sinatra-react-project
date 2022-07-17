@@ -36,6 +36,9 @@ gem "require_all", "~> 3.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
+
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master' 
+
   gem "pry", "~> 0.14.1"
 
   # Automatically reload when there are changes

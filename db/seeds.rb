@@ -1,12 +1,12 @@
 puts "🌱 Seeding spices..."
 
-50.times do
+15.times do
 
   job = Job.create(
-    title:
-    position:
-    employment_type:
-    education_level:
+    title: Faker::Job.title
+    position: Faker::Job.position
+    employment_type: Faker::Job.employment_type
+    education_level: Faker::Job.education_level
   )
 
 puts "✅ Done seeding!"
