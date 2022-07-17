@@ -8,5 +8,5 @@ puts "🌱 Seeding spices..."
     employment_type: Faker::Job.employment_type
     education_level: Faker::Job.education_level
   )
-
+end
 puts "✅ Done seeding!"
