@@ -1,17 +1,20 @@
+
+
 class ApplicationsController < ApplicationController
   get "/applications" do
-    application = Application.all
-    application.to_json
+    @applications = Application.all
+    @applications.to_json(include: [:job])
   end
 
   post "/applications" do
-    application = Application.new(params[:application])
-    if application.save
-      application.to_json
-    else
-      {errors: application.errors.full_messages }.to_json
-    end
+    binding.pry
+    # application = Application.new(params[:application])
+    # if application.save
+    #   application.to_json
+    # else
+    #   {errors: application.errors.full_messages }.to_json
+    # end
   end
 
-  
+
 end

@@ -125,3 +125,53 @@ fetch("http://localhost:9292/test")
 [dbdiagram.io]: https://dbdiagram.io/
 [postman download]: https://www.postman.com/downloads/
 [network tab]: https://developer.chrome.com/docs/devtools/network/
+
+Phase 3 Notes
+
+-----Messy Code------
+class Donation
+def initialize(organization, amount, date, completed)
+
+#instance variables: @variable_name, bound to the instance of which they were defined for
+
+@organization = organization
+@amount = amount
+@date = date
+@completed = completed
+end
+
+#getter method: instance method
+
+def amount
+#self: the reciver of the method currently being invoked
+@amount
+end
+
+def amount=(amount)
+@amount = amount
+end
+
+end
+
+donation = Donation.new(organization, amount, date, completed) #must be in the same order as code above.
+donmation.amount
+
+-----End of Messy Code-----
+
+#setter and getter method, no more need for creating them. ie lines 145 and 150
+#example of using just attr_reader is reading the value of your bank account and not being able to re-assign its value
+
+attr-accesor :amount, :organization, :date, :completed
+
+@ instance var
+@@ class var
+
+class methods start with "self" allows it to be used by other classes
+
+def save
+@@all << self
+end
+
+self.create
+self.new(attributes).save
+end

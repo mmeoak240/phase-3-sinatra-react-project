@@ -3,7 +3,7 @@ class CreateApplicants < ActiveRecord::Migration[6.1]
     create_table :applicants do |t|
       t.string :name
 
-      t.timestamps
+      t.timestampss
     end
   end
 end
