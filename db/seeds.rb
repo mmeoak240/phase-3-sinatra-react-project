@@ -1,6 +1,6 @@
 puts "🌱 Seeding spices..."
 
-15.times do
+8.times do
 
   job = Job.create(
     title: Faker::Job.title,
@@ -9,4 +9,10 @@ puts "🌱 Seeding spices..."
     education_level: Faker::Job.education_level
   )
 end
+
+application = Application.create(
+  name:
+  
+)
+
 puts "✅ Done seeding!"

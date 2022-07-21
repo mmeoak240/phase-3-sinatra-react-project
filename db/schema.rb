@@ -10,12 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_07_20_194220) do
+ActiveRecord::Schema.define(version: 2022_07_21_003751) do
 
   create_table "applications", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.text "about_me"
     t.integer "job_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
