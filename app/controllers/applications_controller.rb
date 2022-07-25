@@ -7,7 +7,13 @@ class ApplicationsController < ApplicationController
   end
 
   patch "/applications/:id" do
-    binding.pry
+    application = Application.find(params[:id])
+    application.update(
+      name: params[:name],
+      email: params[:email]
+    )
+
+    application.to_json
     # application = Application.new(params[:application])
     # if application.save
     #   application.to_json
