@@ -3,4 +3,9 @@ class JobsController < ApplicationController
     @job = Job.all
     @job.to_json
   end
+
+  delete "/jobs/:id" do
+    job = Job.find(params[:id])
+    job.destroy
+  end
 end

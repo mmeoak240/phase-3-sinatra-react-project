@@ -3,10 +3,10 @@
 class ApplicationsController < ApplicationController
   get "/applications" do
     @applications = Application.all
-    @applications.to_json(include: [:job])
+    @applications.to_json
   end
 
-  post "/applications" do
+  patch "/applications/:id" do
     binding.pry
     # application = Application.new(params[:application])
     # if application.save
