@@ -2,8 +2,15 @@
 
 class ApplicationsController < ApplicationController
   get "/applications" do
-    @applications = Application.all
-    @applications.to_json
+    applications = Application.all
+    applications.to_json
+  end
+
+  post "/applications/:id" do 
+    application = Application.create(
+      name:params[:name],
+      email:params[:email]
+    )
   end
 
 
