@@ -10,6 +10,7 @@ class ApplicationsController < ApplicationController
     application = Application.create(
       name:params[:name],
       email:params[:email]
+      job_id: params[:job_id]
     )
   end
 
