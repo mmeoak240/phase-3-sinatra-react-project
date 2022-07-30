@@ -6,10 +6,10 @@ class ApplicationsController < ApplicationController
     applications.to_json
   end
 
-  post "/applications/:id" do 
+  post "/applications" do 
     application = Application.create(
       name:params[:name],
-      email:params[:email]
+      email:params[:email],
       job_id: params[:job_id]
     )
   end
