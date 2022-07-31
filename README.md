@@ -1,6 +1,6 @@
 # Phase 3 Project Backend
 
-This is the backend for a app created for Flatironschool with the goal of show casing skills in ruby and active record.
+This is the backend for a app created for Flatironschool with the goal of show casing skills in ruby and active record. In order to do so I created an app for a business to manage their job postings and applications to thos jobs. To accomplish this I used a one to many association where an application belongs to a single job and a job has many applications. The Job model has full CRUD capabilities so the jobs can be created, will be read and rendered onto the page, you may also edit and delete the jobs. The Application model may be read and rendered and one may create a new application that will be associated with the job applied to and rendered underneath that job.
 
 ### Requirements
 
@@ -15,7 +15,7 @@ bundle install
 run rake db:migrate
 run rake db:seed?
 run rake server
-if you haven't already, follow directions for frontend[frontend url]
+if you haven't already, follow directions for frontend(https://github.com/mmeoak240/phase-3-build-3-frontend)
 
 ### Licensing
 
