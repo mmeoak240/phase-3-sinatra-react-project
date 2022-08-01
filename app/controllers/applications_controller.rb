@@ -12,6 +12,7 @@ class ApplicationsController < ApplicationController
       email:params[:email],
       job_id: params[:job_id]
     )
+    application.to_json
   end
 
 
